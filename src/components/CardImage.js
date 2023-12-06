@@ -1,7 +1,8 @@
 import React from "react";
 
-const CardImage = ({ image }) => {
+function CardImage({ image }){
     const tags = image.tags.split(',');
+    console.log(image);
     return (
         <div className='max-w-sm rounded overflow-hidden shadow-lg'>
             <img src={image.webformatURL} alt="" className='w-full' />
